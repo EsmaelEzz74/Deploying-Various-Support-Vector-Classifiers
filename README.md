@@ -1,4 +1,4 @@
-# Different SVC Kernels Deplyment
+# Different SVM Kernels Deplyment
 Compare between the three different types of SVC kernels on IRIS data set
 - From my inspections, the IRIS dataset contains five columns, four of which are numeric and the fifth is categorical
 - Next I checked for zeros and didn't find any, but for duplicate rows, three rows need to be handled. So I deleted them
@@ -11,7 +11,7 @@ Compare between the three different types of SVC kernels on IRIS data set
 - For data preparation to fit in the model i partitioned the data frame into two dataframes first the X containing the numerical columns and the Y containing the categorical one
 - Then split them into training and test sets using train_test_split and use MinMaxScaler to perform data normalization of these two Sklearn techniques  to validate the model after fitting the training data
 - And the accuracy function used to get the accuracy of the model in both the training and testing sets
-- To get to the function, which takes all the training and testing data and a tolerance integer as a parameter, I set a fixed kernel type for four different sizes of C, which is linear SVC kernels, and fit the data and then get the train and test precision and for each different number of C I used the best comparison experience namely plot_decision_regions from mlxtend.plotting library to plot the decision surface explaining the model's decision boundaries and the train and Test accuracy printed for each graph for C
+- To get to the function, which takes all the training and testing data and a tolerance integer as a parameter, I set a fixed kernel type for four different sizes of C, which is linear SVC fron SVM, and fit the data and then get the train and test precision and for each different number of C I used the best comparison experience namely plot_decision_regions from mlxtend.plotting library to plot the decision surface explaining the model's decision boundaries and the train and Test accuracy printed for each graph for C
 - <img src = "https://user-images.githubusercontent.com/85246622/208247324-0f59eb85-a51b-4e19-88d0-b9fbc6066b1e.png" width="600" height="600"/>
 ---------------------------------------------
 - For a general purpose function, I allow the user to select all model parameters such as tolerance integer, kernel type, gamma and polygrade
@@ -22,3 +22,6 @@ Compare between the three different types of SVC kernels on IRIS data set
 ---------------------------------------------
 - And for the Poly SVC kernel it show a huge difference specially in the decision surface as below
 - <img src = "https://user-images.githubusercontent.com/85246622/208249475-6cafdcd9-ac53-472f-b057-c17437fd839f.png" width="600" height="600"/>
+---------------------------------------------
+- And for the linear SVC kernel it show a slight difference from the linearSVR from SVM
+- <img src = "https://user-images.githubusercontent.com/85246622/209471913-5525d7d3-51ca-42f7-bb85-9eb1a24c99d7.png" width = "400" height = "400" />
