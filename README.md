@@ -20,8 +20,10 @@ Compare between the three different types of SVC kernels on IRIS data set
 - But for the secong type of SVC kernels which is RBF there is different in the two decision surface and train & test score 
 - <img src = "https://user-images.githubusercontent.com/85246622/208249398-4ead809c-60e2-44bc-b22d-c27099c8936d.png" width="600" height="600"/>
 ---------------------------------------------
+- And for the linear SVC kernel it show a slight difference from the linearSVR from SVM
+- <img src = "https://user-images.githubusercontent.com/85246622/209471913-5525d7d3-51ca-42f7-bb85-9eb1a24c99d7.png" width = "600" height = "600" />
+---------------------------------------------
 - And for the Poly SVC kernel it show a huge difference specially in the decision surface as below
 - <img src = "https://user-images.githubusercontent.com/85246622/208249475-6cafdcd9-ac53-472f-b057-c17437fd839f.png" width="600" height="600"/>
----------------------------------------------
-- And for the linear SVC kernel it show a slight difference from the linearSVR from SVM
-- <img src = "https://user-images.githubusercontent.com/85246622/209471913-5525d7d3-51ca-42f7-bb85-9eb1a24c99d7.png" width = "400" height = "400" />
+
+
