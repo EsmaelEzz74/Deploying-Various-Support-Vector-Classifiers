@@ -1,5 +1,5 @@
-# Different SVM Kernels Deplyment
-Compare between the three different types of SVC kernels on IRIS data set
+# Deploying-Various-Support-Vector-Classifiers
+A Comparative Study of SVC Kernels
 - From my inspections, the IRIS dataset contains five columns, four of which are numeric and the fifth is categorical
 - Next I checked for zeros and didn't find any, but for duplicate rows, three rows need to be handled. So I deleted them
 - And to check the data balance I used the seaborn countplot to draw a bar chart to describe the data
